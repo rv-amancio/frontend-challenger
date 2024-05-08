@@ -1,0 +1,7 @@
+<app-header (eventSpinner)="onEventSpinner()"></app-header>
+<main [ngClass]="{'hide-home': showSpinner}">
+  <mat-spinner *ngIf="showSpinner"></mat-spinner>
+  <ng-container *ngIf="!showSpinner" >
+    <router-outlet></router-outlet>
+  </ng-container>
+</main>

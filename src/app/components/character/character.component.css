@@ -1,0 +1,34 @@
+
+.grid{
+    margin: 3em 0;
+}
+.mat-card {
+    height: 100%;
+    background-color: #0A0A0A;
+}
+
+.mat-card-content .card-name{
+    font-size: 1.5em;
+    font-family: "Creepster", system-ui !important;
+    color: #FAFAFA;
+}
+
+.mat-card-content .card-specie{
+    font-size: 1em;
+    font-family: "Poppins", sans-serif !important;
+    color: #A4A4A4;
+}
+
+.favorite-button {
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.mat-grid-tile {
+    border-radius: 12px;
+    border: 1px solid #3D3D3D;
+}
+

@@ -1,0 +1,14 @@
+<div class="container-favorite">
+    <div class="container-header-favorite">
+        <h1 class="creepster-title-page">FAVORITOS</h1>
+    </div>
+    <div>
+        <ng-container *ngIf="favorites$ | async as favorites">
+            <app-character [characters]="favorites" [isInFavoritesPage]="true"></app-character>
+        </ng-container>
+        <ng-container *ngIf="!(favorites$ | async) || (favorites$ | async)?.length === 0">
+            <app-home-response-default [title]="messages.favoritesTitle"
+                [text]="messages.noFavoritesText"></app-home-response-default>
+        </ng-container>
+    </div>
+</div>

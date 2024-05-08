@@ -1,0 +1,17 @@
+.search-home {
+    background-color: #1F1F1F;
+    border: 1px solid #5D5D5D;
+    border-radius: 4px;
+    padding: 0.8125em;
+    color: #F2F2F2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.search-home::placeholder{
+    color: #CACACA !important;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}

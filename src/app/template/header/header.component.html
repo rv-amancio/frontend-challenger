@@ -1,0 +1,25 @@
+<mat-toolbar class="header" color="secondary">
+
+    <span>
+        <a routerLink="/">
+            <img class="logo" src="assets/img/logo.svg" alt="logo angular">
+        </a>
+    </span>
+    <span class="title-group">
+        <a class="home" routerLink="/" (click)="spinner()" [ngClass]="{'active-home': routeName === 'home'}">
+            <i class="material-icons">
+                home
+            </i>
+            <p>Início</p>
+        </a>
+        <mat-divider vertical></mat-divider>
+        <a class="favorite" routerLink="/favorite" (click)="spinner()"
+            [ngClass]="{'active-favorite': routeName === 'favorite'}">
+            <i class="material-icons">
+                favorite
+            </i>
+            <p>Favoritos</p>
+            <span>{{ favoritesCount$ | async }}</span>
+        </a>
+    </span>
+</mat-toolbar>

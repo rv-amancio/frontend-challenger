@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0px !important;
+    min-height: 5vh !important;
+    background-color: #0A0A0A;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .title-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #3D3D3D;
+    border-radius: 12px;
+}
+
+.header .title-group i {
+    font-size: 1.25em;
+}
+
+.header .title-group p {
+    margin-bottom: 0;
+}
+
+.header .title-group a {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #A4A4A4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+.header .title-group a.home {
+    min-width: 5.16vw;
+}
+
+.header .title-group a.favorite {
+    min-width: 10vw;
+}
+
+.header .title-group a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    color: #0A0A0A;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.875em;
+}
+
+.mat-divider.mat-divider-vertical {
+    height: 50px;
+}
+
+.active-home{
+    background-color: #FFFFFF;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #0A0A0A !important;
+}
+
+.active-favorite{
+    background-color: #FFFFFF;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #0A0A0A !important;
+}
+
+.active-favorite span {
+    background-color: #0A0A0A !important;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 425px) {
+    .header .title-group a {
+        font-size: 0.6em;
+    }
+
+    .header .title-group a.favorite {
+        min-width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header .title-group a {
+        font-size: 0.8em;
+    }
+
+    .header .title-group a.favorite {
+        min-width: 17vw;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header .title-group a {
+        font-size: 0.7em;
+    }
+
+    .header .title-group a.favorite {
+        min-width: 13vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header .title-group a {
+        font-size: 0.8em;
+    }
+
+    .header .title-group a.favorite {
+        min-width: 10vw;
+    }
+}

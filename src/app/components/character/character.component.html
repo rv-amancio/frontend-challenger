@@ -1,0 +1,19 @@
+<div class="grid">
+    <mat-grid-list [cols]="breakpoint" rowHeight="22vh" gutterSize="10px" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let character of characters">
+            <mat-card class="example-card">
+                <div class="favorite-button" (click)="toggleFavorite(character)">
+                    <mat-icon>{{ favoritesMap[character.id] ? 'favorite' : 'favorite_border' }}</mat-icon>
+                </div>
+                <img mat-card-image [src]="character.image" [alt]="character.name">
+                <mat-card-content>
+                    <p class="card-name">{{ character.name }}</p>
+                    <p class="card-specie">{{ character.species }}</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<mat-paginator  *ngIf="characters && characters.length > 0" [length]="totalCharacters" [pageSize]="pageSize" (page)="onPageAllChange($event)">
+</mat-paginator>

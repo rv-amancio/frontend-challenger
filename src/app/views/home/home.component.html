@@ -1,0 +1,13 @@
+<div class="container-home">
+    <div class="container-header-home">
+        <h1 class="creepster-title-page">INÍCIO</h1>
+        <app-search-home></app-search-home>
+    </div>
+    <ng-container *ngIf="characters && characters.length > 0">
+        <app-character></app-character>
+    </ng-container>
+    <ng-container *ngIf="!characters || characters.length === 0">
+        <app-home-response-default [title]="messages.initialPageTitle"
+            [text]="messages.initialPageText"></app-home-response-default>
+    </ng-container>
+</div>

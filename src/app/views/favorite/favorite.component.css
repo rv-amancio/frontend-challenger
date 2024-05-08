@@ -1,0 +1,12 @@
+.container-favorite{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.container-header-favorite{
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
